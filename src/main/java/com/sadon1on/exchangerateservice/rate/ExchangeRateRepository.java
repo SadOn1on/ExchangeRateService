@@ -3,7 +3,6 @@ package com.sadon1on.exchangerateservice.rate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Repository
