@@ -1,0 +1,19 @@
+{
+  "Cur_ID": 456,
+  "Cur_ParentID": 190,
+  "Cur_Code": "643",
+  "Cur_Abbreviation": "RUB",
+  "Cur_Name": "Российский рубль",
+  "Cur_Name_Bel": "Расійскі рубель",
+  "Cur_Name_Eng": "Russian Ruble",
+  "Cur_QuotName": "100 Российских рублей",
+  "Cur_QuotName_Bel": "100 Расійскіх рублёў",
+  "Cur_QuotName_Eng": "100 Russian Rubles",
+  "Cur_NameMulti": "Российских рублей",
+  "Cur_Name_BelMulti": "Расійскіх рублёў",
+  "Cur_Name_EngMulti": "Russian Rubles",
+  "Cur_Scale": 100,
+  "Cur_Periodicity": 0,
+  "Cur_DateStart": "2021-07-09T00:00:00",
+  "Cur_DateEnd": "2050-01-01T00:00:00"
+}

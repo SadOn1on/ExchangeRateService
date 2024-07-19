@@ -89,29 +89,6 @@ public class Currency {
     public Currency() {
     }
 
-    public Currency(Integer curID, Integer curParentID, int curCode, String curAbbreviation, String curName,
-                    String curNameBel, String curNameEng, String curQuotName, String curQuotNameBel,
-                    String curQuotNameEng, String curNameMulti, String curNameBelMulti, String curNameEngMulti,
-                    int curScale, int curPeriodicity, LocalDateTime curDateStart, LocalDateTime curDateEnd) {
-        this.curID = curID;
-        this.curParentID = curParentID;
-        this.curCode = curCode;
-        this.curAbbreviation = curAbbreviation;
-        this.curName = curName;
-        this.curNameBel = curNameBel;
-        this.curNameEng = curNameEng;
-        this.curQuotName = curQuotName;
-        this.curQuotNameBel = curQuotNameBel;
-        this.curQuotNameEng = curQuotNameEng;
-        this.curNameMulti = curNameMulti;
-        this.curNameBelMulti = curNameBelMulti;
-        this.curNameEngMulti = curNameEngMulti;
-        this.curScale = curScale;
-        this.curPeriodicity = curPeriodicity;
-        this.curDateStart = curDateStart;
-        this.curDateEnd = curDateEnd;
-    }
-
     public Integer getCurID() {
         return curID;
     }

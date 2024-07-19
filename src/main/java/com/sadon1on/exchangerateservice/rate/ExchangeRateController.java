@@ -1,7 +1,6 @@
 package com.sadon1on.exchangerateservice.rate;
 
 import com.sadon1on.exchangerateservice.currency.NationalBankRequestService;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +28,7 @@ public class ExchangeRateController {
     }
 
     @PostMapping
-    public void loadData(@RequestParam LocalDate date, HttpServletResponse response) {
+    public void loadData(@RequestParam LocalDate date) {
         nationalBankRequestService.getAllExchangeRatesFromAPI(date.atStartOfDay());
     }
 

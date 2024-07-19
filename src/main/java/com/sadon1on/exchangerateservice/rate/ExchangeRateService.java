@@ -8,8 +8,8 @@ import java.time.LocalDateTime;
 
 @Service
 public class ExchangeRateService {
-    private ExchangeRateRepository exchangeRateRepository;
-    private NationalBankRequestService nationalBankRequestService;
+    private final ExchangeRateRepository exchangeRateRepository;
+    private final NationalBankRequestService nationalBankRequestService;
 
     @Autowired
     public ExchangeRateService(ExchangeRateRepository exchangeRateRepository,

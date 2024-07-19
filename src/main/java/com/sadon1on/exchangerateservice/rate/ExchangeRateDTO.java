@@ -85,4 +85,22 @@ public class ExchangeRateDTO {
     public void setCurOfficialRate(Double curOfficialRate) {
         this.curOfficialRate = curOfficialRate;
     }
+
+    @Override
+    public final boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ExchangeRateDTO that)) return false;
+
+        return curScale == that.curScale && date.equals(that.date) && curAbbreviation.equals(that.curAbbreviation) && curName.equals(that.curName) && curOfficialRate.equals(that.curOfficialRate);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = date.hashCode();
+        result = 31 * result + curAbbreviation.hashCode();
+        result = 31 * result + curScale;
+        result = 31 * result + curName.hashCode();
+        result = 31 * result + curOfficialRate.hashCode();
+        return result;
+    }
 }

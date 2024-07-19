@@ -5,14 +5,11 @@ import com.sadon1on.exchangerateservice.rate.ExchangeRateDTO;
 import com.sadon1on.exchangerateservice.rate.ExchangeRateRepository;
 import com.sadon1on.exchangerateservice.rate.NationalBankApiUnavailableException;
 import jakarta.annotation.PostConstruct;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.client.RestClient;
 
 import java.time.LocalDateTime;
