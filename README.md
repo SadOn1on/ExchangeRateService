@@ -1,5 +1,8 @@
 # ExchangeRateService
 
+## Author
+Ilya Zharski
+
 ## Build 
 To build a fat JAR using maven:
 ```
