@@ -2,6 +2,7 @@ package com.sadon1on.exchangerateservice.rate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sadon1on.exchangerateservice.currency.Currency;
+import com.sadon1on.exchangerateservice.currency.NationalBankApiUnavailableException;
 import com.sadon1on.exchangerateservice.currency.NationalBankRequestService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

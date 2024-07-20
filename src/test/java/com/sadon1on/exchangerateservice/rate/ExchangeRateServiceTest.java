@@ -56,7 +56,8 @@ class ExchangeRateServiceTest {
         assertNotNull(result);
         assertEquals(date, result.getDate());
         assertEquals(currency.getCurAbbreviation(), result.getCurAbbreviation());
-        assertEquals(currency.getCurName(), result.getCurName());
+        String expectedName = currency.getCurScale() > 1 ? currency.getCurNameMulti() : currency.getCurName();
+        assertEquals(expectedName, result.getCurName());
         assertEquals(exchangeRate.getCurOfficialRate(), result.getCurOfficialRate());
     }
 

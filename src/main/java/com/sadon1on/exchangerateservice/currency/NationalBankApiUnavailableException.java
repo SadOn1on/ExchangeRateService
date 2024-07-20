@@ -1,4 +1,4 @@
-package com.sadon1on.exchangerateservice.rate;
+package com.sadon1on.exchangerateservice.currency;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

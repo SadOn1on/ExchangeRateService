@@ -2,27 +2,35 @@ package com.sadon1on.exchangerateservice.rate;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.time.LocalDateTime;
 
+@Schema(description = "Exchange rate schema")
 public class ExchangeRateDTO {
     @JsonProperty("Cur_ID")
+    @Schema(description = "Unique id of the currency")
     private Integer id;
 
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     @JsonProperty("Date")
+    @Schema(description = "Date on which the exchange rate is set", example = "2023-01-10T00:00:00")
     private LocalDateTime date;
 
     @JsonProperty("Cur_Abbreviation")
+    @Schema(description = "Currency abbreviation", example = "AUD")
     private String curAbbreviation;
 
     @JsonProperty("Cur_Scale")
+    @Schema(description = "Number of foreign currency units")
     private int curScale;
 
     @JsonProperty("Cur_Name")
+    @Schema(description = "Qualified name of the currency")
     private String curName;
 
     @JsonProperty("Cur_OfficialRate")
+    @Schema(description = "Official rate set by National Bank")
     private Double curOfficialRate;
 
     public ExchangeRateDTO() {
